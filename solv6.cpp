@@ -1,0 +1,33 @@
+/*Write a program to read temperature in centigrade and display a suitable message according 
+to the temperature state below: 
+Temp < 0 then Freezing weather.  
+Temp 0-10 then Very Cold weather 
+Temp 10-20 then Cold weather 
+Temp 20-30 then Normal in Temp 
+Temp 30-40 then Its Hot 
+Temp >=40 then Its Very Hot*/
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<" Enter temperature in centigrade : ";
+    cin>>num;
+    if(num<0){
+        cout<<" Freezing Weather ";
+    }
+    else if(num>=0 && num<10){
+        cout<<" Very Cold Weather ";
+    }
+    else if(num>=10 && num<20){
+        cout<<" Cold Weather ";
+    }
+    else if(num>=20 && num<30){
+        cout<<" Normal in Temp ";
+    }
+    else if(num>=30 && num<40){
+        cout<<" Its Hot ";
+    }
+    else{
+        cout<<" Its Very Hot ";
+    }
+}
